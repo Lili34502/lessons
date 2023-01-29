@@ -1,0 +1,61 @@
+/*---------------------------
+/*-----Reset Styles----------
+/----------------------------*/
+@import url("reset.css");
+/* Тепер файлик з обнулюючими стилями підключений */
+
+/*{
+	color:pink ;
+}*/
+header span{
+	color: blue;
+}
+span{
+	color: rgb(33, 208, 54);
+}
+h1 span{
+	color: blueviolet;
+}
+.alles.importance li{
+color: rgb(32, 129, 72);
+}
+.alles.importance p{
+	color: rgb(68, 190, 149);
+}
+#i-link{
+	color: rgb(176, 129, 220);
+}
+div.end{
+	color: rgb(179, 153, 106);
+}
+.erste.zweite{
+	color: olive;
+}
+h2 {
+color: rgb(106, 84, 186);
+}
+
+.dritte, .vierte{
+color: blueviolet;
+}
+.arbeite p{
+	color: rgb(39, 125, 96);
+}
+.footer,.test {
+	color: black;
+}
+.need-b1 .tag{
+color: black;
+}
+.list-1 *{
+	color: rgb(152, 64, 74);
+}
+.vitamin~p{
+	color: rgb(73, 73, 149);
+}
+.vitamin-2>p{
+	color: black;
+}
+[class*="__container"]{
+	color: rgb(200, 125, 32)
+}
