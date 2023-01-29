@@ -59,3 +59,6 @@ color: black;
 [class*="__container"]{
 	color: rgb(200, 125, 32)
 }
+.total+p{
+	color: rgb(215, 215, 14);
+}
