@@ -1,0 +1,357 @@
+/* ======================================================== */
+/* --------------- CSS-властивості блоків ----------------- */
+/* ======================================================== */
+
+
+
+/* Відступи */
+/* Відступи неочикувано працюють для рядкових об'єктів */
+/* Відступи прийнято задавати для батьківського об'єкту */
+
+/*
+padding - Внутрішній відступ. 
+Відступи ВСЕРЕДЕНІ об'єкту. 
+Від кордонів об'єкту ДО ЙОГО КОНТЕНТУ
+НЕ успадковується
+
+padding: з_усіх_сторін;
+padding: зверху_знизу зправа_зліва;
+padding: зверху зправа_зліва знизу;
+padding: зверху зправа знизу зліва;
+
+padding-top: значення;
+padding-right: значення;
+padding-bottom: значення;
+padding-left: значення;
+
+При вказанні значення у відсотках
+відсоток береться від ширини батьківського об'єкту,
+навіть для горизонтальних відступів 
+*/
+/*
+margin - Зовнішній відступ.
+Відступи ЗОВНІ об'єкту. 
+
+margin: з_усіх_сторін;
+margin: зверху_знизу зправа_зліва;
+margin: зверху зправа_зліва знизу;
+margin: зверху зправа знизу зліва;
+
+margin-top: значення;
+margin-right: значення;
+margin-bottom: значення;
+margin-left: значення;
+
+Значення можуть бути від'ємними!
+
+*/
+/*
+Схлопування margin.
+Значання відступу буде дорівнювати 
+найбільшому з 2х значеннь.
+Відступ margin прийнято записувати з ліва направо
+та зверху вниз
+*/
+/*
+.block-2 {
+	background-color: yellowgreen;
+}
+
+/*
+width - чітко задає ширину блочного (блочно-рядкового) 
+об'єкту.
+НЕ працює зі рядковими об'єктами
+width: значення;
+auto- (за замовченням) автоматичний розмір
+*/
+/*
+max-width 
+Встановлює максимальну ширину 
+блочних (блочно-рядкових) тегів 
+Властивість не успадковується 
+НЕ працює зі рядковими об'єктами
+*/
+/*
+min-width 
+Встановлює мінімальну ширину 
+блочних (блочно-рядкових) тегів 
+Властивість не успадковується 
+НЕ працює зі рядковими об'єктами
+*/
+	/* Гумове зображення */
+	/* max-width: 100%; */
+
+/*
+height 
+Встановлює чітку висоту блочних (блочно-рядкових) тегів 
+Властивість не успадковується 
+НЕ працює зі рядковими об'єктами
+
+min-height 
+Встановлює мінімальну висоту 
+блочних (блочно-рядкових) тегів 
+Властивість не успадковується 
+НЕ працює зі рядковими об'єктами
+
+max-height 
+Встановлює максимальну 
+висоту блочних (блочно-рядкових) тегів 
+Властивість не успадковується 
+НЕ працює зі рядковими об'єктами
+*/
+
+/*
+box-sizing
+Застосовується для зміни алгоритму обчислення величин
+content-box - (за замовченням) додає відступи
+до розміру об'єкту
+border-box - значення розмірів враховують відступи
+*/
+
+/*
+overflow 
+Управляє відображенням контенту блочного елементу
+Властивість не успадковується
+visible - (за замовченням) Відображається усесь 
+контент елемента, навіть за межами встановлених розмірів
+hidden - Відображається тільки контент всередені елемента,
+clip - Майже теж саме що й hidden.
+все інше буде сховано
+scroll - Завжди додаються смужки прокрутки
+auto - Смужки прокрутки додаються лише за необхідністю
+
+Тільки вертикаль
+overflow-y: ; 
+Тільки горизонталь
+overflow-x: ;
+*/
+/*
+vertical-align - Визначає вертикальне верівнювання 
+рядкових та блочно-рядкових об'єктів.
+top
+middle
+bottom
+*/
+/*
+display
+Багатоцільова властивість яка задає 
+глобальні параметри тега. 
+Властивість не успадковується
+block - (за замовченням для блочних об'ектів) 
+Елемент відображається як блочний.
+inline - (за замовченням для рядкових об'ектів)  
+Елемент відображається як рядковий.
+inline-block - (блочно-рядковий) Елемент відображається як 
+рядковий але з можливістю 
+використання усіх CSS-властивостей.
+none - Елемент не виводиться в браузер. 
+Інші елементи займають його місце.
+Не приймає участь у обробці браузером.
+*/
+	/* 
+	Нічого не змінює
+	display: inline;
+	 */
+
+/* Відступи прийнято задавати для батьківського об'єкту */
+/* Правильно */
+/*
+.block {
+	margin-bottom: 20px;
+}
+.block__text {
+}
+*/
+/* НЕ Правильно */
+/*
+.block {
+}
+.block__text {
+	margin-bottom: 20px;
+}
+*/
+
+/* Центрування блоку */
+/*
+1) Об'єкт має бути блочним@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+2) Об'єкт має мати меньшу ширину за батьківський
+3) Додаємо margin: 0 auto;
+*/
+/*
+.block {
+	margin: 0 auto;
+	max-width: 300px;
+}
+*/
+
+/* Тег BR */
+/* Перевірка на тип */
+/* Все ж рядковий */
+
+
+/* Гарний приклад з A */
+/*
+Переводимо рядковий об'єкт A в блочно-рядковий
+тоді об'єкт почне займати простір в залежності 
+від контенту в ньому та це дозволить застосувати 
+зовнішній відступ (margin-bottom)
+*/
+
+/* Фантомні (рядкові) відступи */
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,700&display=swap");
+body{
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 1.8;
+	color: #6C757D;
+
+}
+.container{
+	max-width: 1440px;
+	margin: 0 auto;
+}
+h2{
+	font-weight: 700;
+	font-size: 25px;
+	line-height:1.6;
+	color: #212529;
+	max-width: 401px;
+	margin-bottom: 40px;
+}
+.block-1-text h2{
+	padding-top: 15px;
+}
+.block-2-text h2{
+	max-width: 605px;
+}
+
+
+.vence p{
+	margin-bottom: 36px;
+}
+.block-1-text,
+.block-2-text{
+	margin-bottom: 44px;
+}
+.block-1-text,
+.block-2-text,
+.block-3-text,
+.block-2-end{
+	padding: 0px 312px;
+}
+
+.block-1-img,
+.block-2-img {
+	max-width:100%;
+	margin-bottom: 80px;
+}
+.block-2-img {
+	font-size: 0;
+}
+.girl{
+	margin-right: 30px;
+}
+.block-3-text{
+	margin-bottom: -12px;
+}
+.block-2-list{
+	font-size: 0;
+}
+li{
+	display: inline-block;
+	font-size: 8px;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 2.5;
+	padding-right: 41px;
+}
+/*...........................*/
+/* Тренування.................*/
+/*............................*/
+.block{
+	max-width: 1200px;
+}
+h3{
+	font-size: 24px;
+	font-weight: 700;
+	color: red;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.block-lorem-1{
+	height: 200px;
+	overflow: scroll;
+	color: pink;
+	margin-bottom: 30px;
+	padding: 0px 200px;
+}
+.block-lorem-1 p{
+	margin-bottom: 20px;
+}
+.block-lorem-2{
+	height: 200px;
+	overflow: hidden;
+	color: rgb(136, 120, 180);
+	margin-bottom: 30px;
+	padding: 0px 300px;
+}
+.block-lorem-2 p{
+	margin-bottom: 10px;
+}
+.block-lorem-3{
+	height: 100px;
+	overflow: auto;
+	color: rgb(89, 150, 111);
+	margin-bottom: 30px;
+}
+.inline a{
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 700;
+	color: pink;
+}
+.inline span{
+display: block;
+font-size: 18px;
+color: rgb(67, 150, 246);
+text-transform: uppercase;
+margin-bottom: 15px;
+padding: 0px 400px;
+}
+
+.inline-block span{
+	display: inline-block;
+	margin-left: 20px;
+	text-transform: uppercase;
+}
+.inline-block-1{
+	height: 100%;
+	margin-bottom: 20px;
+	vertical-align: top;
+	color: red;
+}
+.inline-block-1 img{
+	vertical-align: top;
+	padding-left: 100px;
+}
+.inline-block-2{
+	margin-bottom: 20px;
+	color: rgb(64, 143, 98);
+}
+.inline-block-2 img{
+	vertical-align: middle;
+	padding-right: 100px;
+}
+.inline-block-3{
+	margin-bottom: 20px;
+	color: rgb(75, 56, 139);
+}
+.inline-block-3 img{
+vertical-align: bottom;
+}
+.inline-block-2 img{
+	vertical-align: middle;
+}
