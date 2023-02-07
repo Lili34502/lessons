@@ -210,7 +210,7 @@ body{
 
 }
 .container{
-	max-width: 1440px;
+	max-width: 1240px;
 	margin: 0 auto;
 }
 h2{
@@ -221,9 +221,7 @@ h2{
 	max-width: 401px;
 	margin-bottom: 40px;
 }
-.block-1-text h2{
-	padding-top: 15px;
-}
+
 .block-2-text h2{
 	max-width: 605px;
 }
@@ -232,6 +230,10 @@ h2{
 .vence p{
 	margin-bottom: 36px;
 }
+.block-1-text{
+	padding-top:15px;
+}
+
 .block-1-text,
 .block-2-text{
 	padding-bottom: 44px;
