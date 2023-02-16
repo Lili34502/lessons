@@ -405,10 +405,6 @@ margin-right: 10px;
 	padding: 10px 30px;
 	background-color: #3056D3;
 	border-radius: 30px;
-	/*-------Зкопіювала з Женіного урока))))))))))-------*/
-	top: 0;
-	position: relative;
-	transition: all 0.35;
 }
 .button:hover{
 	top: 3px;
