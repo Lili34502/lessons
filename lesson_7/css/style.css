@@ -408,7 +408,7 @@ margin-right: 10px;
 	/*-------Зкопіювала з Женіного урока))))))))))-------*/
 	top: 0;
 	position: relative;
-	transition: all 0,35;
+	transition: all 0.35;
 }
 .button:hover{
 	top: 3px;
