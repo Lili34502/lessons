@@ -144,8 +144,9 @@
 	
 }
 .vence__container{
-	max-width: 1240px;
+	max-width: 1270px;
 	margin: 0 auto;
+	padding: 0px 15px;
 }
 body{
 	font-family: 'Inter';
@@ -199,8 +200,9 @@ h2{
 	margin-bottom: 45px;
 }
 .lists__container {
-	max-width: 1145px;
+	max-width: 1175px;
 	margin: 0 auto;
+	padding: 0px 15px;
 }
 .lists{
 	margin-top: 150px;
@@ -271,12 +273,6 @@ margin-right: 10px;
 		}
 /*------unorder-list------*/
 
-.list__square {
-}
-.list__rhombus {
-}
-.list__unorder-list {
-}
 .list__unorder-list ol{
 	font-size: 0;
 	
@@ -357,8 +353,9 @@ margin-right: 10px;
 	
 }
 .tailgrids__container {
-	max-width: 1170px;
+	max-width: 1200px;
 	margin: 0 auto;
+	padding:0px 15px;
 }
 .tailgrids__text span{
 	font-family: 'Inter';
