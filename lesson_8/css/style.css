@@ -352,6 +352,10 @@ color: red;
 	background: #3056D3;
 	border-radius: 30px;
 }
+.tilegrids__button:hover{
+	background-color: #8f30d3;
+	box-shadow: 2px 2px 20px 0px yellow;
+}
 .tailgrids__image {
 	font-size: 0;
 	display: inline-block;
