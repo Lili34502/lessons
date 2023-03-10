@@ -1,0 +1,394 @@
+@import url("reset.css");
+@import url("common.css");
+
+@import url("https://fonts.googleapis.com/css?family=Inter:500,600,700&display=swap");
+body{
+	font-family: "Inter";
+	font-style: normal;
+	background: url("../img/pattern-4.avif");
+}
+[class*="__container"]{
+	max-width: 1200px;
+	padding: 0px 15px;
+	margin: 0 auto;
+	
+}
+.header {
+	width: 100%;
+	background-color: #adc5b2;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	
+}
+/*...................Logo.........................*/
+
+.header__logo {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 30px;
+}
+.header__logo img{
+	
+	
+}
+/*---------------------menu----------------------------*/
+
+.header__logo {
+}
+.header__menu {
+	
+}
+.menu-header {
+	display: inline-block;
+	vertical-align: middle;
+}
+.menu-header__list {
+	
+}
+.menu-header__item {
+	display: inline-block;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+/*------------------невидимий блок, щоб можна було переходити на сабменю-----------------------*/
+ .menu-header__item::after{
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 0;
+	height: 70px;
+	width: 100%;
+	opacity: 0;
+	display: none;
+ }
+ .menu-header__item:hover::after{
+	display: block;
+}
+
+/*---------------------------------------------------------------------------*/
+.menu-header__item:not(:last-child,:first-child){
+	margin-right: 35px;
+}
+.menu-header__item:hover .menu-header__sublist{
+opacity: 1;
+visibility: visible;
+}
+.menu-header__link {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.19; /* 19/16 */
+	color: #212B36;
+}
+.menu-header__link:hover{
+	color: #3056D3;
+}
+.menu-header__item_margin-right{
+	margin-right: 45px;
+}
+
+.menu-header__link_background{
+	background: #F4F7FF;
+	border-radius: 5px;
+	padding: 9px 20.5px;
+	
+}
+.menu-header__link_background::after{
+	content: url("../img/icons/check-mark.svg");
+	padding-left: 13px;
+	min-height: 6px;
+
+}
+.menu-header__link_mark::after{
+	content: url("../img/icons/check-mark.svg");
+	padding-left: 7px;
+	min-height: 6px;
+}/*---------------------submenu------------------------------------*/
+.menu-header__sublist{
+	position: absolute;
+	top: 82px;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+}
+.menu-header__sublist::before{
+	content:url("../img/triangle.png");
+	min-height: 20px;
+	position: relative;
+	bottom: 32px;
+	left: -14px;
+}
+.sublist-menu{
+padding: 22px 24px;
+background: #FFFFFF;
+border: 0.5px solid #E7E7E7;
+border-radius: 5px;
+width: 185px;
+}
+.sublist-menu__item {
+	position: relative;
+}
+.sublist-menu__item:not(:last-child) {
+	margin-bottom: 13px;
+}
+.sublist-menu__item:hover .subsublist-menu{
+	opacity: 1;
+	visibility: visible;
+}
+.sublist-menu__link {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5; /* 24/16 */
+	color: #637381;
+	display: block;
+}
+
+.sublist-menu__link:hover{
+	color: #3056D3;
+}
+.sublist-menu__link:hover::after{
+	content: url("../img/icons/arrow.svg");
+	min-height: 9.4px;
+	position: absolute;
+	top: 0;
+	left: 97%;
+}
+/*----------------subsubmenu--------------------------------------*/
+.subsublist-menu__title{
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.5; /* 24/16 */
+	color: #212B36;
+	margin-bottom: 20px;
+}
+.sublist-menu__subsublist {
+	position: absolute;
+	top: -29px;
+	left: 118%;
+}
+.subsublist-menu {
+	background-color: #fff;
+	border: 0.5px solid #E7E7E7;
+	border-radius: 5px;
+	padding: 30px;
+	width: 180px;
+	opacity: 0;
+	visibility: hidden;
+}
+.subsublist-menu__item:not(:last-child) {
+	margin-bottom: 12px;
+}
+/*--------------невидимий блок-----.----------------------------*/
+.subsublist-menu__item::before{
+	content: "";
+	display: block;
+	height: 50px;
+	width: 65px;
+	position: absolute;
+	top: 20px;
+	left:-35px;
+
+}
+
+/*---------------------------------------------------------------*/
+.subsublist-menu__link {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5; /* 24/16 */
+	color: #637381;
+	display: block;
+}
+.subsublist-menu__link:hover{
+	color: #3056D3;
+}
+
+
+
+
+
+/*-------------------------icons----------------------------------*/
+.header__icons {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 130px;
+}
+.icons{
+	
+}
+.icons div{
+	display: inline-block;
+
+}
+.icons div:not(:last-child){
+	margin-right: 20px;
+}
+.icons__search {
+}
+.icons__like img{
+	
+}
+.icons__like{
+
+}
+.icons__basket {
+}
+[class^="icons__"]{
+	position: relative;
+}
+/*-------------------------------span-------------------------------*/
+.icons__number{
+
+}
+.number{
+	display: inline-block;
+	font-weight: 400;
+	font-size: 11px;
+	line-height: 1.18; /* 13/11 */
+	color: #FFFFFF;
+	height: 16px;
+	min-width: 16px;
+	border-radius: 50%;
+	background: #3056D3;
+	text-align: center;
+	padding-top: 1.5px; /*?Думаю, що можна по іншому відцентрувати число,але не розумію як! vertical-aline:middle; - не працює, а якщо задавати паддінг вверх і вниз-кружечок ламається */
+	position: absolute;
+	top: -4px;
+	left: 18px;
+}
+/*----------------------------main----------------------------------*/
+.main p{
+font-size: 18px;
+color:rgb(22, 29, 22);
+background-color: rgba(226, 226, 110, 0.869);
+line-height: 1.5;
+padding: 60px;
+}
+.main{
+	margin-top: 70px;
+}
+/*
+Різне CSS позиціонування дуже часто 
+використовується при верстці сучасних макетів 
+і відкриває для нас нові цікаві можливості 
+розташування елементів у потоці. 
+Але треба бути обережними та вміти поводитися 
+з цими можливостями грамотно. 
+Розглянемо такі CSS властивості позиціонування як 
+position,
+top,
+left,
+right,
+bottom та z-index.
+А також їх значення.
+top,
+left,
+right,
+bottom та z-index. - працюють тільки зі значеннями position
+відмінним від static
+
+При позиціонуванні елементу вказавши значення для top, bottom перестає працювати. Так само це працює з left та right. При цьому ,якщо таки ж вказати обидві властивості то пріоритетними будуть: по Y top, а по X left. Гарною практикою є вказання  значень лише для однієї властивості на вісь. (Тобто або top або bottom для Y, та left або right для X)
+
+z-index - управляє положенням об'єкту по осі Z
+auto - ближчим буде об'єкт який нижче по коду
+
+static - (за замовченням) статичне позиціонування
+
+.block-1 {
+	position: static;
+	left: 20px;
+}
+
+relative - відносне позиціонування. 
+Об'єкт позіціонується відносно свого поточного місця положення.
+(відносно свого положення в коді)
+
+Для позиціонування об'єкту (з position: relative;) по вертикалі використовуючи відсотки неможливе без чіткої вказанної висоти для батьківського елементу
+Наприклад: top: 10% не спрацює без вказання висоти для батьківського елементу
+*/
+/*
+.block-1 {
+	position: relative;
+}
+.block-2 {
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+.block-3 {
+	position: relative;
+}*/
+
+/*
+absolute - абсолютне (безумовне) позиціонування.
+1) Разом з position: absolute; обов'язково використовуйте 
+властивості для позіціанування (left, top, right, bottom)
+2) Об'єкт позіціонується відносно першого батьківського елементу, position якого відмінний від static.
+3) Об'єкт втрачає свою блочну сутність. Також втрачає своє положення в коді, та простір який він займав
+4) Не можемо вказувати для БЕМ-блоків
+
+Для позиціонування об'єкту (з position: absolute;) по вертикалі,використовуючи відсотки, відсоток буде братись від висоти батьківського елементу
+
+*/
+/*
+.page {
+	padding: 50px;
+}
+.items {
+	position: relative;
+}
+.block-1 {
+}
+.block-2 {
+	position: absolute;
+	left: 10%;
+	top: 10%;
+}
+.block-3 {
+	position: relative;
+}
+*/
+/*
+
+
+fixed - фіксоване позіціанування
+1) Разом з position: fixed; обов'язково використовуйте 
+властивості для позіціанування (left, top, right, bottom)
+2) Об'єкт втрачає свою блочну сутність. 
+Також втрачає своє положення в коді, та простір який він займав
+3) Завжди позіціонується відносно вікна браузера.
+4) Не приймає участі у скролі.
+5) Не можемо вказувати для БЕМ-блоків
+
+*/
+/*
+.page {
+	padding: 50px;
+}
+.items {
+	position: relative;
+}
+.block-1 {
+}
+.block-2 {
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+}
+.block-3 {
+}
+*/
+/*
+
+sticky - Це гібридне поєднання значень static та fixed. 
+Спочатку елемент веде себе як static але після того 
+як скролл доходить до його кордону він стає 
+fixed та прилипає до зазначеної позиції top або bottom.
+!!! Не працює, якщо у батькіских об'єктах присутній 
+overflow: hidden;
+
+*/
+
