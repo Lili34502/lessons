@@ -1,0 +1,358 @@
+@import url("reset.css");
+@import url("common.css");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap");
+body {
+	font-family: 'Poppins';
+	font-style: normal;
+}
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.main{
+	flex-grow: 1;
+}
+.header {
+	background-color: #666;
+	width: 100%;
+	height: 100px;
+}
+.main {
+}
+.main__container {
+	max-width: 1270px;
+	margin: 0 auto;
+	padding: 0px 15px;
+}
+h1{
+	font-size: 40px;
+	line-height: 1.66; /* 20/12 */
+	color: #495057;
+	text-align: center;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+.main__columns-1 {
+	margin-bottom: 30px;
+}
+.columns {
+	font-size: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	row-gap: 45px;
+	column-gap: 20px;
+	justify-content: space-between;
+}
+.columns__block {
+	display: flex;
+	flex-direction: column;
+	max-width: 400px;
+	row-gap: 30px;
+}
+.columns__img {
+	border-radius: 3px;
+	max-width: 400px;
+	position: relative;
+}
+.columns__button{}
+.button-img{
+	display: inline-block;
+	font-weight: 700;
+	font-size: 8px;
+	line-height: 20px;
+	color: #F8F9FA;
+	background: rgba(33, 37, 41, 0.3);
+	border-radius: 3px;
+	padding: 3px 13px 2px;
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	text-transform: uppercase;
+}
+.columns__text {
+}
+.text-column {
+	display: flex;
+	flex-direction: column;
+	row-gap:15px;
+}
+.text-column:not(:last-child){
+	
+}
+.text-column__data,
+.text-column__info,
+.text-column__name {
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 1.66; /* 20/12 */
+	color: #495057;
+
+}
+.text-column__title{
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 1.6; /* 40/25 */
+	color: #212529;
+	
+}
+.text-column__title span{
+	text-transform: uppercase;
+}
+.text-column__info {
+
+}
+.text-column__name::before { /*? Можливо цю полоску треба було робити через Html? Тоді можна було б обійтися без margin-bottom.Як правильніше?*/
+	content: "";
+	width: 390px;
+	border: 1px solid #E5E5E5;
+	display: block;
+	margin-bottom: 15px;
+}
+/*--------------------------Training---------------------------------------*/
+.main__training{
+	margin-bottom: 30px;
+} 
+.training{
+background-color: #666;
+padding-bottom: 20px;
+}
+
+.training__title {
+	font-size: 23px;
+	line-height: 1.66; /* 20/12 */
+	color: #fff;
+	text-align: center;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+.training__block {
+	height: 450px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;
+	margin: 0px -20px;
+
+}
+.training__column {
+	flex: 0 0 30%;
+	padding: 0px 20px;
+}
+.training__item {
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 1.66; /* 20/12 */
+	color: #fff;
+	width: 360px;
+	height: 160px;
+	background-color: #77608d;
+	border: 2px solid rgb(41, 41, 78);
+	text-align: center;
+	
+}
+/*------------------------page----------------------------------*/
+.page__block{
+	font-weight: 300;
+	font-size: 19px;
+	line-height: 1.66; /* 20/12 */
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	background-color: #5f8563;
+	border: 2px solid rgb(41, 41, 78);
+	padding: 20px;
+	
+}
+.page{
+display: flex;
+justify-content: center;
+flex-direction: row-reverse;
+}
+.page__block {
+	margin-bottom: 30px;
+}
+.text-page {
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background-color: #504c77;
+
+}
+.text-page__main {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	row-gap: 10px;
+	background-color: #794f45;
+	border: 1px solid rgb(33, 21, 21);
+	width: 350px;
+	padding: 15px;
+}
+.text-page__title {
+	font-size: 21px;
+	line-height: 1.66; /* 20/12 */
+	color: #fff;
+	font-weight: 500;
+}
+.text-page__text {
+	flex-grow: 1;
+}
+.text-page__button {
+
+
+}
+.text-page__link {
+	display: inline-block;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 20px;
+	color: #F8F9FA;
+	background: rgba(33, 37, 41, 0.3);
+	border-radius: 3px;
+	padding: 5px 13px;
+	text-align: center;
+}
+/*---------------------------------cards--------------------------------------*/
+.cards{
+margin-bottom: 30px;
+}
+.main__cards{
+
+}
+
+.cards__columns {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+}
+.cards__block {
+	background-color: #5f8563;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-content: center;
+	align-items: center;
+	max-width: 410px;
+	min-height: 100%;
+	row-gap: 15px;
+	border: 1px solid rgb(33, 21, 21);
+}
+.cards__img img{
+	width: 350px;
+}
+.cards__text {
+	color: #F8F9FA;
+	font-size: 16px;
+	line-height: 1.66; /* 20/12 */
+	font-weight: 500;
+	width: 350px;
+	text-align: justify;
+	flex-grow: 1;
+}
+.cards__button a{
+	display:  inline-block;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 20px;
+	color: #F8F9FA;
+	background: rgba(33, 37, 41, 0.3);
+	border-radius: 3px;
+	padding: 10px 20px;
+	text-align: center;
+}
+
+/* --------------------------------field__link------------------------------------- */
+.main__field{
+margin-bottom: 30px;
+}
+
+.field{
+display: flex;
+justify-content: space-evenly;
+}
+
+.field__link a{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 20px;
+	color: #F8F9FA;
+	background: rgba(57, 111, 165, 0.757);
+	border-radius: 3px;
+	padding: 15px 30px;
+	text-align: center;
+	column-gap: 10px;
+}
+.field__link a::before{
+	content: "";
+	flex: 0 0 20px;
+	width: 20px; /*Додатково додаємо ще 20px, щоб посилання виглядало правильно*/
+	height: 20px;
+	background-color: #5f8563;
+	
+}
+/* ---------------------------------field__andere---------------------------------------- */
+
+.field__andere {
+}
+.andere-link {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 20px;
+	color: #F8F9FA;
+	background: rgba(57, 111, 165, 0.757);
+	border-radius: 3px;
+	padding: 15px 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	
+}
+.andere-link__quadrat {
+	flex: 0 0 20px;
+	/*flex-shrink: 0;
+	flex-grow: 0;*/
+	width: 20px; /*?Все одно тут треба задавати ширину, бо тоді кнопка ламається!!! Або flex: 0 0 20px; або flex-shrink: 0; flex-grow: 0; width: 20px - НЕ ПРАЦЮЄ!!! Чи я щось зробила неправильно?*/
+	height: 20px;
+	background-color: #5f8563;
+}
+.andere-link__button {
+}
+/*-----------------------------------float-------------------------------------------------*/
+.float{
+
+}
+.main__float{
+margin-bottom: 30px;
+}
+.float__img{
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+.float__text{
+font-size: 18px;
+line-height: 1.5;
+}
+/*----------------------------Footer---------------------------------------*/
+.footer {
+	background-color: #666;
+	width: 100%;
+	height: 100px;
+}
+
+
+
+
+
