@@ -323,7 +323,7 @@ justify-content: space-evenly;
 	flex: 0 0 20px;
 	/*flex-shrink: 0;
 	flex-grow: 0;*/
-	width: 20px; /*?Все одно тут треба задавати ширину, бо тоді кнопка ламається!!! Або flex: 0 0 20px; або flex-shrink: 0; flex-grow: 0; width: 20px - НЕ ПРАЦЮЄ!!! Чи я щось зробила неправильно?*/
+	width: 20px; /*?Все одно тут треба задавати ширину, бо тоді кнопка ламається!!! Flex: 0 0 20px; або flex-shrink: 0; flex-grow: 0; width: 20px - НЕ ПРАЦЮЄ!!! Чи я щось зробила неправильно?*/
 	height: 20px;
 	background-color: #5f8563;
 }
