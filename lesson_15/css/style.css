@@ -183,7 +183,7 @@ flex-grow: 1;
 	flex-wrap: wrap;
 	flex-direction: row;
 	column-gap: 80px;
-	flex-grow: 10px;
+	row-gap: 10px;
 }
 .item-section__date {
 }
