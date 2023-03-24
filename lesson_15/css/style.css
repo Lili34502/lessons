@@ -1,0 +1,257 @@
+@import url("reset.css");
+@import url("common.css");
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+body {
+	font-family: "Poppins", sans-serif;
+	font-style: normal;
+	
+}
+.header{
+	height: 80px;
+	min-width: 100%;
+	background-color: rgb(74, 101, 92);
+	margin-bottom: 30px;
+}
+.wrapper{
+	overflow: clip;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.main{
+	flex-grow: 1;
+}
+[class*="__container"]{
+	max-width: 1230px;
+	margin: 0 auto;
+	padding: 0px 15px;
+}
+
+/*-----------------------servises-header----------------*/
+.main__servises{
+	margin-bottom: 70px;
+}
+.servises__header {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 10px;
+	align-items: center;
+	justify-content: flex-start;
+	column-gap: 26px;
+	 
+}
+.servises__header:not(:last-child){
+	margin-bottom: 40px;
+}
+.servises-header__title {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #000000;
+	text-transform: uppercase;
+}
+.servises-header__horizontal-flat {
+	width: 464px;
+	height: 0;
+	border: 2px solid #000000;
+}
+/*-------------------------portfolio--------------------------*/
+.servises__portfolio {
+}
+.portfolio {
+}
+.portfolio__block:not(:last-child) {
+	 margin-bottom: 40px; /*? Можна тут відступ зробити за допомогою звичайного margin, чи обов"язково використовувати flex?*/
+}
+.block-portfolio {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 20px;
+	row-gap: 20px;
+	
+}
+.block-portfolio__img img{
+	max-width: 100%;
+}
+.block-portfolio__img {
+	/* max-width: 747px; */
+	flex: 0 1 747px;
+}
+.block-portfolio__info {
+	/* max-width: 335px; */
+	flex: 0 1 335px;
+}
+.block-portfolio__title {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 1.4;
+	color: #333333;
+}
+
+
+.block-portfolio__text {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.6;
+	color: #9C9C9C;
+}
+/*--------------------------header-details-----------------------*/
+
+.details__header {
+	margin-bottom: 100px;
+}
+.header-details {
+	
+}
+.header-details__info {
+	max-width: 520px;
+	margin: 0px auto 53px;
+	
+}
+.header-details__info> *:not(:last-child) {
+	margin-bottom: 40px;
+}
+.header-details__title {
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 1.4;
+	color: #000000;
+	text-align: center;
+	text-transform: capitalize;
+}
+.header-details__text {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.6;
+	text-align: center;
+	color: #000000;
+	
+}
+.header-details__img  img{
+	max-width: 100%;
+}
+/*---------------------section-main------------------------*/
+.section-main__columns{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	column-gap: 20px;
+	row-gap: 15px;
+}
+.main__section{
+	margin-bottom: 81px;
+	
+}
+.section-main{
+	
+}
+
+.section-main__page {
+	flex-basis: 585px;
+	display: flex;
+	flex-direction: column;
+	min-height: 320px;
+}
+.section-main__page p{
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.6;
+	color: #9C9C9C;
+}
+.section-main__title {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 1.4;
+	color: #333333;
+	text-transform: capitalize;
+	text-align-last: left;
+	margin-bottom: 24px;
+	
+}
+.section-main__text {
+flex-grow: 1;
+}
+.section-main__text p:not(:last-child){
+	margin-bottom: 30px;
+}
+.section-main__item {
+}
+.item-section {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	column-gap: 80px;
+	flex-grow: 10px;
+}
+.item-section__date {
+}
+.item-section__text {
+}
+/*--------------------------------gallery------------------------------*/
+.main__gallery{
+	margin-bottom: 100px;
+}
+.gallery{
+
+}
+.gallery__images {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	margin:-15px -15px; /*! Звідки береться саме ця цифра -15px? Це цифри з додаткових паддінгів обмежуючого контейнера чи цифри з макету?*/
+}
+.gallery__column {
+	padding:15px 15px; /*! Звідки береться саме ця цифра 15px? Це цифри з додаткових паддінгів обмежуючого контейнера чи цифри з макету?*/
+	flex: 0 1 50%;
+}
+.gallery__column_width{
+	flex: 0 1 100%;
+}
+.gallery__image {
+	display: block; /*Для посилання все одно треба додати, display:block*/ 
+}
+.gallery__column img{
+/* max-width: 100%; */
+}
+.gallery__img img{
+	max-width: 100%;
+}
+
+.gallery__img_width img{
+	max-width: 100%;
+}
+/*.gallery__images {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: space-between;
+	flex: 0 1 584px;
+	gap: 32px;
+}
+.gallery__image {
+}
+..gallery__img{
+	flex: 0 1 584px;
+}
+.gallery__img img{
+	max-width: 100%;
+}
+.gallery__img_width {
+	flex: 1 0 100%;
+}*/
+
+
+
+
+/*------------------Footer-------------------*/
+.footer{
+	height: 80px;
+	min-width: 100%;
+	background-color: rgb(74, 101, 92);
+}
